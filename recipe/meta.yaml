@@ -1,5 +1,5 @@
 {% set name = "PyVISA-sim" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bd6c56f78d7fd5ee7ca6a2ff473abe7a8649a70b2f2e986021ee3c4ae26da216
+  sha256: 9076a16912a8114b43c44b1d32894fc1f132d4389d8b2b719af62241e42161c1
 
 build:
   noarch: python
@@ -44,13 +44,12 @@ about:
   license_family: MIT
   license_file: LICENSE.txt
   summary: 'Simulated backend for PyVISA implementing TCPIP, GPIB, RS232, and USB resources'
-  
   description: |
     PyVISA started as a wrapper for the NI-VISA library and therefore you need to install
     the National Instruments VISA library in your system. This works most of the time, 
     for most people. But sometimes you need to test PyVISA without the physical devices 
     or even without NI-VISA.
-    
+
     Starting from version 1.6, PyVISA allows to use different backends. These backends can 
     be dynamically loaded. PyVISA-sim is one of such backends. It implements most of the 
     methods for Message Based communication (Serial/USB/GPIB/Ethernet) in a simulated 
