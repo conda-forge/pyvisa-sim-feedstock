@@ -1,17 +1,17 @@
 {% set name = "PyVISA-sim" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9076a16912a8114b43c44b1d32894fc1f132d4389d8b2b719af62241e42161c1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') | lower }}-{{ version }}.tar.gz
+  sha256: 7d5a672ca48adb948be616f0612b8532b1eee664af67c1adf10bff4e3bfbf8d0
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script:
     - {{ PYTHON }} -m pip install . -vv
 
