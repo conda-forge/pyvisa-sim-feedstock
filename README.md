@@ -11,7 +11,7 @@ Summary: Simulated backend for PyVISA implementing TCPIP, GPIB, RS232, and USB r
 
 Development: https://github.com/pyvisa/pyvisa-sim
 
-Documentation: https://pyvisa.readthedocs.io/projects/pyvisa-sim/
+Documentation: https://pyvisa.readthedocs.io/projects/pyvisa-sim/en/latest/
 
 PyVISA started as a wrapper for the NI-VISA library and therefore you need to install
 the National Instruments VISA library in your system. This works most of the time,
