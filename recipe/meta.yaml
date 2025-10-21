@@ -44,7 +44,7 @@ about:
   home: https://github.com/pyvisa/pyvisa-sim
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: 'Simulated backend for PyVISA implementing TCPIP, GPIB, RS232, and USB resources'
   description: |
     PyVISA started as a wrapper for the NI-VISA library and therefore you need to install
